@@ -8,13 +8,13 @@ export default function Form(props) {
         <form className='form-container' onSubmit={onSubmit}>
             <div className='form-submit'>
                 <h2>Add a Team Member</h2>
-                <Button style={{backgroundColor: 'blue'}}>Submit</Button>
+                <Button color='primary'>Submit</Button>
             </div>
 
             <div className='form-inputs'>
-                <h4>General Infomation</h4>
+                <h4>Please enter your info here</h4>
 
-                <label>Name:&nbsp;
+                <label className='label'>Name:&nbsp;
                     <input
                         type='text'
                         name='username'
@@ -24,7 +24,7 @@ export default function Form(props) {
                     />
                 </label>
 
-                <label htmlFor='emailInput'>Email:&nbsp;
+                <label className='label' htmlFor='emailInput'>Email:&nbsp;
                     <input 
                         id='emailInput'
                         type='email'
@@ -36,7 +36,7 @@ export default function Form(props) {
                     />
                 </label>
 
-                <label>Role:&nbsp;
+                <label className='label'>Role:&nbsp;
                     <select 
                         name='role'
                         value={values.role}
